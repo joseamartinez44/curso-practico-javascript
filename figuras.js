@@ -1,5 +1,5 @@
 // Código del cuadrado
-console.group("Cuadrados");
+// console.group("Cuadrados");
 
 // const ladoCuadrado = 5;
 // console.log("Los lados del cuadrado miden: " + ladoCuadrado + " cm");
@@ -14,12 +14,12 @@ function areaCuadado(lado) {
 }
 // console.log("El área del cuadrado es: " + areaCuadado + " cm2");
 
-console.groupEnd();
+// console.groupEnd();
 
 
 
 // Código del triángulo
-console.group("Triangulos");
+// console.group("Triangulos");
 
 // const ladoTriangulo1 = 6;
 // const ladoTriangulo2 = 6;
@@ -39,12 +39,12 @@ function areaTriangulo(base, altura) {
 }
 // console.log("El área del triángulo es: " + areaTriangulo + " cm2");
 
-console.groupEnd();
+// console.groupEnd();
 
 
 
 // Código del círculo
-console.group("Círculos");
+// console.group("Círculos");
 
 // Radio
 // const radioCirculo = 4;
@@ -73,4 +73,23 @@ function areaCirculo(radio) {
 }
 // console.log("El área del círculo es: " + areaCirculo + " cm2");
 
-console.groupEnd();
+// console.groupEnd();
+
+
+
+// Aquí interactuamos con el HTML
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("input-cuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadado(value);
+    alert(perimetro + " cm");
+}
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("input-cuadrado");
+    const value = input.value;
+
+    const area = areaCuadado(value);
+    alert(area + " cm2");  
+}
